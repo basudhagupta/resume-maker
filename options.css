@@ -1,0 +1,128 @@
+body{
+    content: "";
+    background-image: url(images/back0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.button {
+    background-color: #669999;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 30px 540px 20px 530px;
+    border-radius:12px;
+    cursor: pointer;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.small-container {
+    max-width: 100%;
+    height: 70%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+.col-4 {
+    text-align: center;
+    float: left;
+    flex-basis: 20%;
+    padding: 150px 50px;
+    width: 25%;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img {
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after {
+    content: "";
+    background: #ff1313;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+h4 {
+    color: #555;
+    font-weight: bold;
+}
+
+.col-4 p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.rating .fa {
+    color: #ff523b;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+h3 {
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    background: radial-gradient(white, grey);
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    background: radial-gradient(black, rgb(48, 48, 48), grey);
+    margin: 0 350px;
+    border-radius: 20px;
+
+}
